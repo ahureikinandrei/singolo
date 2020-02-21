@@ -80,3 +80,59 @@ body {
     color: #f06c64;
     transition: 0.3s;
 }
+
+.slider {
+    background-color: #f06c64;
+}
+
+.slider:after {
+    content: "";
+    height: 6px;
+    width: 100%;
+    background-color: #ea676b;
+    position: absolute;
+}
+
+.slider-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.slider__button {
+    background: url("../image/svg-icons/chev.svg") no-repeat;
+    width: 16px;
+    height: 27px;
+    cursor: pointer;
+}
+
+.slider__button:hover {
+    transition: 0.3s;
+    opacity: 0.5;
+}
+
+.slider__button--right {
+    transform: rotate(180deg);
+}
+
+.slider__phone {
+    transition: 0.3s;
+}
+
+.slider__phone:hover {
+    opacity: 0.8;
+}
+
+.slider__phone--vertical {
+    background: url("../image/png/iPhone Vertical.png") no-repeat;
+    width: 242px;
+    height: 488px;
+}
+
+.slider__phone--horizontal {
+    background: url("../image/png/iPhone Horizontal.png") no-repeat;
+    width: 500px;
+    height: 240px;
+}
