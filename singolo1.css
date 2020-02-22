@@ -6,6 +6,7 @@ body {
 .container {
     max-width: 940px;
     margin: 0 auto;
+    padding-bottom: 7px
 }
 
 .header {
@@ -31,6 +32,7 @@ body {
     color: #ffffff;
     text-transform: uppercase;
     position: relative;
+    font-size: 24px;
 }
 
 .header__logo:hover {
@@ -42,11 +44,13 @@ body {
     content: "*";
     color: #f06c64;
     position: absolute;
+    top: -7%;
 }
 
 .header-nav__list {
     list-style-type: none;
     display: flex;
+    padding-top: 13px;
 }
 
 .header-nav__list a {
@@ -55,7 +59,8 @@ body {
     line-height: 6px;
     color: #ffffff;
     text-transform: uppercase;
-    padding: 16px;
+    margin: 0 13px 0 13px;
+    font-weight: 700;
 }
 
 .header-nav__title {
@@ -98,7 +103,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 45px;
 }
 
 .slider__button {
@@ -143,8 +148,8 @@ body {
 }
 
 .services__description-wrap {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 70px;
+    padding-bottom: 11px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
