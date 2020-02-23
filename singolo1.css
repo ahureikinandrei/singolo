@@ -1,6 +1,7 @@
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
+    text-align: justify;
 }
 
 .container {
@@ -44,7 +45,7 @@ body {
     content: "*";
     color: #f06c64;
     position: absolute;
-    top: -7%;
+    top: -3%;
 }
 
 .header-nav__list {
@@ -59,10 +60,15 @@ body {
     line-height: 6px;
     color: #ffffff;
     text-transform: uppercase;
-    margin: 0 13px 0 13px;
+    margin: 0 15px 0 14px;
     font-weight: 700;
 }
 
+.header-nav__list li:last-child a {
+    
+    margin: 0 0 0 13px;
+  
+}
 .header-nav__title {
     position: relative;
 }
@@ -140,6 +146,7 @@ body {
     background: url("assets/iPhone Horizontal.png") no-repeat;
     width: 500px;
     height: 240px;
+    transform: translate(15px,-4px);
 }
 
 .services {
@@ -149,34 +156,38 @@ body {
 
 .services__description-wrap {
     padding-top: 65px;
-    padding-bottom: 11px;
+    padding-bottom: 23px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .services__description-wrap h2 {
-    margin: 0 0 19px 0;
-    font-weight: bold;
+    margin: 0 0 2px 0;
+    font-weight: 900;
     font-size: 30px;
     color: #666d89;
 }
 
 .services__description-wrap p {
     line-height: 30px;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: -0.2px;
 }
 
 .services__items-wrap {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .services__item {
-    height: 90px;
-    width: 231px;
+    height: 92px;
+    width: 219px;
     overflow: hidden;
     padding-left: 82px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     position: relative;
 }
 
@@ -185,13 +196,13 @@ body {
     position: absolute;
     width: 62px;
     height: 62px;
-    left: 0;
-    top: 50%;
     transform: translate(8px, -50%);
 }
 
 .services__item h3 {
-    margin: 0;
+    font-size: 18px;
+    font-weight: 900;
+    margin: 0 0 10px 0;
 }
 
 .services__item p {
@@ -202,24 +213,36 @@ body {
 
 .services__item--design:before {
     background: url("assets/pen.svg") no-repeat;
+    left: -8px;
+    top: 38%;
 }
 
 .services__item--ideas:before {
     background: url("assets/bulb.svg") no-repeat;
+    left: -8px;
+    top: 38%;
 }
 
 .services__item--love:before {
     background: url("assets/heart.svg") no-repeat;
+    left: -8px;
+    top: 37%;
 }
 
 .services__item--layout:before {
     background: url("assets/phone.svg") no-repeat;
+    left: -8px;
+    top: 37%;
 }
 
 .services__item--support:before {
     background: url("assets/bubble.svg") no-repeat;
+    left: -8px;
+    top: 37%;
 }
 
 .services__item--star:before {
     background: url("assets/star.svg") no-repeat;
+    left: -8px;
+    top: 37%;
 }
