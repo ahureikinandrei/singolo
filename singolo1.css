@@ -148,7 +148,7 @@ body {
 }
 
 .services__description-wrap {
-    padding-top: 70px;
+    padding-top: 65px;
     padding-bottom: 11px;
     display: flex;
     flex-direction: column;
@@ -156,8 +156,10 @@ body {
 }
 
 .services__description-wrap h2 {
-    margin: 0 0 20px 0;
+    margin: 0 0 19px 0;
     font-weight: bold;
+    font-size: 30px;
+    color: #666d89;
 }
 
 .services__description-wrap p {
@@ -220,3 +222,4 @@ body {
 
 .services__item--star:before {
     background: url("assets/star.svg") no-repeat;
+}
