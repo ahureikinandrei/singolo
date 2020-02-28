@@ -48,14 +48,14 @@ body {
 .portfolio {
     background: #2d303a;
     padding:60px 0 46px 0;
-    border-bottom: 6px solid #323746;
+    border-bottom: 7px solid #323746;
 }
 
 .portfolio h2 {
     font-size: 30px;
     font-weight: 900;
     color: #666d89;
-    margin-bottom:21px;
+    margin-bottom:23px;
     letter-spacing: 0.3px;
 }
 
@@ -88,7 +88,7 @@ ul.portfolio-menu__list li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 21px 0 0 0;
+    padding: 19px 0 0 0;
 }
 
 .portfolio-menu__images {
