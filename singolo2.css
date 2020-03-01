@@ -149,6 +149,8 @@ ul.portfolio-menu__list li a:hover {
     font-weight: 900;
     color: #666d89;
     margin: 10px 0 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .about__profiles p {
