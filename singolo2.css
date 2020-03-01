@@ -131,7 +131,58 @@ ul.portfolio-menu__list li a {
 
 .about__profiles {
     width: 300px;
-    height: 300px;
+    height: 100%;
+}
+
+.about__profiles h3{
+    font-size: 18px;
+    font-weight: 900;
+    color: #666d89;
+    margin: 10px 0 10px 0;
+}
+
+.about__profiles p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #767e9e;
+    letter-spacing: -0.2px;
+    text-align: justify;
+    margin-bottom:24px;
+}
+
+.social-icons{
+    width: 300px;
+    height: 100px;
+}
+
+.social-icons__icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right:4px;
+    border-radius: 50%;
+    border: 1px solid #6a718c;
+    opacity: 70%;
+}
+
+.icon-facebook {
+    background-image: url("assets/facebook.svg");  
+}
+
+.icon-google {
+    background-image: url("assets/google.svg");
+}
+
+.icon-twitter {   
+    background-image: url("assets/twitter.svg");
+}
+
+.icon-linkedin {
+    background-image: url("assets/linkedin.svg");
 }
 
 
