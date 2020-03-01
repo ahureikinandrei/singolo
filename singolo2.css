@@ -84,6 +84,11 @@ ul.portfolio-menu__list li a {
     padding: 2px 7px;
 }
 
+ul.portfolio-menu__list li a:hover {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
 .portfolio-menu__examples {
     display: flex;
     flex-wrap: wrap;
@@ -156,6 +161,11 @@ ul.portfolio-menu__list li a {
     margin-bottom:24px;
 }
 
+.about__profiles a:hover {
+    opacity: 0.2;
+    background-color: #f06c64;
+}
+
 .social-icons{
     width: 300px;
     height: 100px;
@@ -171,7 +181,7 @@ ul.portfolio-menu__list li a {
     margin-right:4px;
     border-radius: 50%;
     border: 1px solid #6a718c;
-    opacity: 70%;
+    opacity: 0.5;
 }
 
 .icon-facebook {
