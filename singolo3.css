@@ -1,0 +1,164 @@
+/*fonts*/
+
+@font-face {
+    font-family: 'Lato';
+    src: url("assets/Lato-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("assets/Lato-Black.ttf");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("assets/Lato-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("assets/Lato-Light.ttf");
+    font-weight: 300;
+}
+
+html, body, div, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+a, a:link, a:active, a:visited, a:hover {
+    text-decoration: none;
+}
+
+body {
+    color: #767e9e;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 60px 10px;
+    overflow: hidden;
+}
+
+.contact {
+    background: #f06c64;
+    overflow: hidden;
+    border-bottom: 6px solid #ea676b;
+}
+
+.contact__description-wrap h2 {
+    font-size: 30px;
+    font-weight: 900;
+    color: #f0d8d9;
+    margin: 0 0 21px 0;
+}
+
+.contact__description-wrap p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #f0d8d9;
+    line-height: 1.65;
+    letter-spacing: -0.01em;
+}
+
+.contact__form-wrap {
+    display: flex;
+    padding-top: 40px;
+}
+
+.contact__info {
+    padding-left: 20px;
+}
+
+.contact__info h3 {
+    font-size: 18px;
+    font-weight: 900;
+    color: #f0d8d9;
+    margin: 0 0 8px 0;
+
+}
+
+.contact__info p, a {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.9;
+    color: #f0d8d9;
+    letter-spacing: -0.015em;
+    margin-bottom: 17px;
+    text-align: justify;
+}
+.contact__info p.address {
+    display: block;
+    margin-bottom: 0px;
+}
+.contact__info p.address svg {
+    padding: 7px 14px 0px 2px;
+ 
+}
+
+.contact__info a.phone {
+    display: block;
+    margin-bottom: 0px;
+}
+
+.contact__info a.phone svg {
+    padding: 2px 11px 0px 0px;
+ 
+}
+
+
+.contact__info a.email {
+    display: block;
+    margin-bottom: 0px;
+}
+
+.contact__info a.email svg {
+    padding: 2px 10px 0px 0px;
+}
+
+.contact__form {
+    width: 620px;
+}
+
+.contact__form input { 
+    padding: 0px 15px;
+    margin: 0 0 16px 0;
+    background: #d6564f;
+    width: 590px;
+    height: 38px;
+    line-height: 38px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #f48c8f;
+    font-family: 'Lato', sans-serif;    
+}
+
+textarea {
+    padding: 8px 15px 23px 15px;
+    margin: 0 0 16px 0;
+    background: #d6564f;
+    max-width: 590px;
+    width: 590px;
+    height: 170px;
+    border: 0;
+    border-radius: 5px;
+    overflow: auto;
+    resize: none;
+    font-size: 12px;
+    color: #f48c8f;
+    font-family: 'Lato', sans-serif;
+
+}
+
+::placeholder {
+    color: #f48c8f;
+    opacity: 1;
+  }
