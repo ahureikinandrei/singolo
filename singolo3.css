@@ -93,6 +93,11 @@ body {
     margin-bottom: 17px;
     text-align: justify;
 }
+
+.contact__info  a:hover {
+    opacity: 0.2;
+    background-color: #f06c64;   
+}
 .contact__info p.address {
     display: block;
     margin-bottom: 0px;
