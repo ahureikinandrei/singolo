@@ -201,6 +201,11 @@ background: #2d303a;
     transform: translate(4px, 8px);
 }
 
+.social-icons a.social-icons__icon:hover {
+    opacity: 0.2;
+    background-color: #f06c64;
+}
+
 .social-icons__icon {
     display: inline-block;
     vertical-align: middle;
