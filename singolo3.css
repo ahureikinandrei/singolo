@@ -43,8 +43,7 @@ body {
 .container {
     max-width: 940px;
     margin: 0 auto;
-    padding: 60px 10px;
-    overflow: hidden;
+    padding: 60px 10px 11px 10px;   
 }
 
 .contact {
@@ -57,7 +56,7 @@ body {
     font-size: 30px;
     font-weight: 900;
     color: #f0d8d9;
-    margin: 0 0 21px 0;
+    margin: 0 0 20px 0;
 }
 
 .contact__description-wrap p {
@@ -70,7 +69,7 @@ body {
 
 .contact__form-wrap {
     display: flex;
-    padding-top: 40px;
+    padding-top: 42px;
 }
 
 .contact__info {
@@ -106,6 +105,7 @@ body {
 .contact__info a.phone {
     display: block;
     margin-bottom: 0px;
+    line-height: 1.6;
 }
 
 .contact__info a.phone svg {
@@ -117,6 +117,7 @@ body {
 .contact__info a.email {
     display: block;
     margin-bottom: 0px;
+    line-height: 1.8;
 }
 
 .contact__info a.email svg {
@@ -162,3 +163,71 @@ textarea {
     color: #f48c8f;
     opacity: 1;
   }
+
+input.submitbtn {
+    padding: 0;
+    margin: 0;
+    background: #d6564f;
+    width: 150px;
+    height: 38px;
+    line-height: 38px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    color: #f48c8f;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer {
+background: #2d303a;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+    height: 76px;
+  }
+.copyright {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.footer .social-icons {
+    transform: translate(4px, 8px);
+}
+
+.social-icons__icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right:4px;
+    border-radius: 50%;
+    border: 1px solid #6a718c;
+    opacity: 0.5;
+}
+
+.icon-facebook {
+    background-image: url("assets/facebook.svg");  
+}
+
+.icon-google {
+    background-image: url("assets/google.svg");
+}
+
+.icon-twitter {   
+    background-image: url("assets/twitter.svg");
+}
+
+.icon-linkedin {
+    background-image: url("assets/linkedin.svg");
+}
+
+
