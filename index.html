@@ -10,17 +10,17 @@
 </head>
 <body>
     <!-- singolo1 -->
-<header class="header">
+<header class="header" id="home">
     <div class="container">
         <div class="header-wrap">
             <h1><a href="#" class="header__logo">singolo</a></h1>
             <div class="header-nav">
-                <ul class="header-nav__list">
-                    <li class="header-nav__title"><a href="#">home</a></li>
-                    <li class="header-nav__title"><a href="#">services</a></li>
-                    <li class="header-nav__title"><a href="#">portfolio</a></li>
-                    <li class="header-nav__title"><a href="#">about</a></li>
-                    <li class="header-nav__title"><a href="#">contact</a></li>
+                <ul class="header-nav__list" id="menu">
+                    <li class="header-nav__title"><a class="active" href="#home">home</a></li>
+                    <li class="header-nav__title"><a href="#Our-services">services</a></li>
+                    <li class="header-nav__title"><a href="#portfolio">portfolio</a></li>
+                    <li class="header-nav__title"><a href="#about-us">about</a></li>
+                    <li class="header-nav__title"><a href="#get-quote">contact</a></li>
                 </ul>
             </div>
         </div>
@@ -30,15 +30,30 @@
     <div class="slider">
         <div class="container">
             <div class="slider-wrap">
-                <div class="slider__button slider__button--left"></div>
-                <div class="slider__phone slider__phone--vertical"></div>
-                <div class="slider__phone slider__phone--horizontal"></div>
-                <div class="slider__button slider__button--right"></div>
+                <div class="slider__button slider__button--left">
+                    <img src="assets/chev.svg"alt="">
+                </div>
+                <div class="slider__phone slider__phone1 activeslide">
+                    <img src="assets/iPhone.png" alt="" class="phone--vertical">
+                    <img src="assets/Shadow.png" alt="" class="phone--vertical--shadow">
+                    <div class="display--vertical"></div>
+                </div>
+                <div class="slider__phone slider__phone2 activeslide">
+                    <img src="assets/iPhone.png" alt="" class="phone--horizontal">
+                    <img src="assets/Shadow.png" alt="" class="phone--horizontal--shadow">
+                    <div class="display--horizontal"></div>
+                </div>
+                <div class="slider__phone slider__phone3">
+                    <img src="assets/slide2.png" alt="" class="phone--slide">
+                </div>
+                <div class="slider__button slider__button--right">
+                    <img src="assets/chev.svg"alt="">
+                </div>
             </div>
         </div>
     </div>
 </div>
-<div class="services">
+<div class="services" id="Our-services">
     <div class="container">
         <div class="services__description-wrap">
             <h2>Our Services</h2>
@@ -73,7 +88,7 @@
     </div>
 </div>
 <!-- singolo2 -->
-<div class="portfolio">
+<div class="portfolio" id="portfolio">
     <div class="container">
         <h2>Portfolio</h2>
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>                   
@@ -99,7 +114,7 @@
         </div>           
     </div>   
 </div>
-<div class="about">
+<div class="about" id="about-us">
     <div class="container">
         <div class="about__description-wrap">
             <h2>About Us</h2>
@@ -141,7 +156,7 @@
     </div>
 </div>
 <!-- singolo3 --> 
-<div class="contact">
+<div class="contact" id="contact">
     <div class="container">
        <div class="contact__description-wrap">
         <h2>Get a Quote</h2>
@@ -149,20 +164,21 @@
        </div> 
        <div class="contact__form-wrap">
         <div class="contact__form">
-            <form method="get">
-                    
-                <input name="Name" class="" type="text" placeholder="Name (Required)"/>
-                
-                <input name="Email" class="" type="email" placeholder="Email (Required)"/>
-                
-                <input name="Subject" class="" type="text" placeholder="Subject" />
-                
-                <textarea name="Detail" cols="28" rows="11" placeholder="Describe your project in detail..."></textarea>
-                
-                <input type="submit" placeholder="submit" value="submit" name="subscribe" class="submitbtn" />
-                
+            <form method="get" id="fotm">    
+                <input name="Name" class="" type="text" id ="subject-name" placeholder="Name (Required)" required />
+                <input name="Email" class="" type="email" id ="subject-email" placeholder="Email (Required)"required />
+                <input name="Subject" class="" type="text" id ="subject-discription" placeholder="Subject" />  
+                <textarea name="Detail" cols="28" rows="11" id ="subject-masenge" placeholder="Describe your project in detail..."></textarea> 
+                <input type="submit" id ="subject-submit" value="submit" name="subscribe" class="submitbtn" />
+                <div id="message-block" class="hidden">
+                    <div id="message" class="hidden">
+                        <p><span class="messages" id="result1"></span></p>
+                        <p><span class="messages" id="result2"></span></p>
+                        <p><span class="messages" id="result3"></span></p>
+                        <button class="message-block-btn" id="close-btn">OK</button>
+                    </div>
+                </div>  
             </form>
-
         </div>
         <div class="contact__info">
             <h3>Contact Information</h3>
@@ -209,6 +225,8 @@
             </div>
 
     </div>        
-</div>  
+</div>
+<script src="script.js">
+</script>  
 </body>
 </html>
