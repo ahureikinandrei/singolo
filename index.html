@@ -10,14 +10,14 @@
 </head>
 <body>
     <!-- singolo1 -->
-<header class="header" id="home">
+<header class="header" >
     <div class="container">
         <div class="header-wrap">
             <h1><a href="#" class="header__logo">singolo</a></h1>
             <div class="header-nav">
                 <ul class="header-nav__list" id="menu">
                     <li class="header-nav__title"><a class="active" href="#home">home</a></li>
-                    <li class="header-nav__title"><a href="#Our-services">services</a></li>
+                    <li class="header-nav__title"><a href="#our-services">services</a></li>
                     <li class="header-nav__title"><a href="#portfolio">portfolio</a></li>
                     <li class="header-nav__title"><a href="#about-us">about</a></li>
                     <li class="header-nav__title"><a href="#get-quote">contact</a></li>
@@ -26,23 +26,21 @@
         </div>
     </div>
 </header>
-<div class="main">
-    <div class="slider">
+<main id="main">
+    <section class="slider" id="home">
         <div class="container">
             <div class="slider-wrap">
                 <div class="slider__button slider__button--left">
                     <img src="assets/chev.svg"alt="">
                 </div>
-                <div class="slider__phone slider__phone1 activeslide">
-                    <img src="assets/iPhone.png" alt="" class="phone--vertical">
-                    <img src="assets/Shadow.png" alt="" class="phone--vertical--shadow">
-                    <div class="display--vertical"></div>
-                </div>
-                <div class="slider__phone slider__phone2 activeslide">
-                    <img src="assets/iPhone.png" alt="" class="phone--horizontal">
-                    <img src="assets/Shadow.png" alt="" class="phone--horizontal--shadow">
-                    <div class="display--horizontal"></div>
-                </div>
+                <div class="slider__phone activeslide">      
+                        <img src="assets/iPhone.png" alt="" class="phone--vertical">
+                        <img src="assets/Shadow.png" alt="" class="phone--vertical--shadow">
+                        <div class="display--vertical"></div>
+                        <img src="assets/iPhone.png" alt="" class="phone--horizontal">
+                        <img src="assets/Shadow.png" alt="" class="phone--horizontal--shadow">
+                         <div class="display--horizontal"></div>
+                </div> 
                 <div class="slider__phone slider__phone3">
                     <img src="assets/slide2.png" alt="" class="phone--slide">
                 </div>
@@ -51,170 +49,167 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="services" id="Our-services">
-    <div class="container">
-        <div class="services__description-wrap">
-            <h2>Our Services</h2>
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-        </div>
-        <div class="services__items-wrap">
-            <div class="services__item services__item--design">
-                <h3>Custom Design</h3>
-                <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+    </section>
+    <section class="services" id="our-services">
+        <div class="container">
+            <div class="services__description-wrap">
+                <h2>Our Services</h2>
+                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             </div>
-            <div class="services__item services__item--ideas">
-                <h3>Inovative Ideas</h3>
-                <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-            </div>
-            <div class="services__item services__item--love">
-                <h3>Love Is The Answer</h3>
-                <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
-            </div>
-            <div class="services__item services__item--layout">
-                <h3>Responsive Layout</h3>
-                <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
-            </div>
-            <div class="services__item services__item--support">
-                <h3>24 / 7 Support</h3>
-                <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
-            </div>
-            <div class="services__item services__item--star">
-                <h3>Feel Like A Star</h3>
-                <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- singolo2 -->
-<div class="portfolio" id="portfolio">
-    <div class="container">
-        <h2>Portfolio</h2>
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>                   
-        <ul class="portfolio-menu__list">
-            <li class="portfolio-menu__title"><a href="#">All</a></li>
-            <li class="portfolio-menu__title"><a href="#">Web Design</a></li>
-            <li class="portfolio-menu__title"><a href="#">Graphic Design</a></li>
-            <li class="portfolio-menu__title"><a href="#">Artwork</a></li>
-        </ul>
-        <div class="portfolio-menu__examples">
-            <div class="portfolio-menu__images"><img src="assets/img1.jpg" alt=""></div>
-            <div class="portfolio-menu__images"><img src="assets/img2.jpg" alt=""></div>
-            <div class="portfolio-menu__images"><img src="assets/img3.jpg" alt=""></div>
-            <div class="portfolio-menu__images"><img src="assets/img4.jpg" alt=""></div>
-            <div class="portfolio-menu__images"><img src="assets/img5.jpg" alt=""></div>
-            <div class="portfolio-menu__images"><img src="assets/img6.jpg" alt=""></div>
-            <div class="portfolio-menu__images"><img src="assets/img7.jpg" alt=""></div>
-            <div class="portfolio-menu__images"><img src="assets/img8.jpg" alt=""></div>
-            <div class="portfolio-menu__images"><img src="assets/img9.jpg" alt=""></div>
-            <div class="portfolio-menu__images"><img src="assets/img10.jpg" alt=""></div>
-            <div class="portfolio-menu__images"><img src="assets/img11.jpg" alt=""></div>
-            <div class="portfolio-menu__images"><img src="assets/img12.jpg" alt=""></div>
-        </div>           
-    </div>   
-</div>
-<div class="about" id="about-us">
-    <div class="container">
-        <div class="about__description-wrap">
-            <h2>About Us</h2>
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            </div>
-        <div class="about__profiles-wrap">
-            <div class="about__profiles"><img src="assets/profile1.jpg" alt="">
-                <h3>Adam Jensen</h3>
-                <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-                <div class="social-icons">
-                    <a class="social-icons__icon icon-facebook" href="#"></a>
-                    <a class="social-icons__icon icon-google" href="#"></a>
-                    <a class="social-icons__icon icon-twitter" href="#"></a>
-                    <a class="social-icons__icon icon-linkedin"href="#"></a>
+            <div class="services__items-wrap">
+                <div class="services__item services__item--design">
+                    <h3>Custom Design</h3>
+                    <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                </div>
+                <div class="services__item services__item--ideas">
+                    <h3>Inovative Ideas</h3>
+                    <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                </div>
+                <div class="services__item services__item--love">
+                    <h3>Love Is The Answer</h3>
+                    <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                </div>
+                <div class="services__item services__item--layout">
+                    <h3>Responsive Layout</h3>
+                    <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
+                </div>
+                <div class="services__item services__item--support">
+                    <h3>24 / 7 Support</h3>
+                    <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
+                </div>
+                <div class="services__item services__item--star">
+                    <h3>Feel Like A Star</h3>
+                    <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
                 </div>
             </div>
-            <div class="about__profiles"><img src="assets/profile2.jpg" alt="">
-                <h3>Desmond Miles</h3>
-                <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-                <div class="social-icons">
-                    <a class="social-icons__icon icon-facebook" href="#"></a>
-                    <a class="social-icons__icon icon-google" href="#"></a>
-                    <a class="social-icons__icon icon-twitter" href="#"></a>
-                    <a class="social-icons__icon icon-linkedin"href="#"></a>
-                </div>
-            </div>
-            <div class="about__profiles"><img src="assets/profile3.jpg" alt="">
-                <h3>Scolara Visari</h3>
-                <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
-                <div class="social-icons">
-                    <a class="social-icons__icon icon icon-facebook" href="#"></a>
-                    <a class="social-icons__icon icon-google" href="#"></a>
-                    <a class="social-icons__icon icon-twitter" href="#"></a>
-                    <a class="social-icons__icon icon-linkedin"href="#"></a>
-                </div>
-            </div>
-
         </div>
-    </div>
-</div>
-<!-- singolo3 --> 
-<div class="contact" id="contact">
-    <div class="container">
-       <div class="contact__description-wrap">
-        <h2>Get a Quote</h2>
-        <p> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>               
-       </div> 
-       <div class="contact__form-wrap">
-        <div class="contact__form">
-            <form method="get" id="fotm">    
-                <input name="Name" class="" type="text" id ="subject-name" placeholder="Name (Required)" required />
-                <input name="Email" class="" type="email" id ="subject-email" placeholder="Email (Required)"required />
-                <input name="Subject" class="" type="text" id ="subject-discription" placeholder="Subject" />  
-                <textarea name="Detail" cols="28" rows="11" id ="subject-masenge" placeholder="Describe your project in detail..."></textarea> 
-                <input type="submit" id ="subject-submit" value="submit" name="subscribe" class="submitbtn" />
-                <div id="message-block" class="hidden">
-                    <div id="message" class="hidden">
-                        <p><span class="messages" id="result1"></span></p>
-                        <p><span class="messages" id="result2"></span></p>
-                        <p><span class="messages" id="result3"></span></p>
-                        <button class="message-block-btn" id="close-btn">OK</button>
+    </section>
+    <!-- singolo2 -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>                   
+            <ul class="portfolio-menu__list">
+                <li class="portfolio-menu__title">All</li>
+                <li class="portfolio-menu__title">Web Design</li>
+                <li class="portfolio-menu__title">Graphic Design</li>
+                <li class="portfolio-menu__title">Artwork</li>
+            </ul>
+            <div class="portfolio-menu__examples" id="portfolio__images">
+                <div class="portfolio-menu__images"><img src="assets/img1.jpg" alt=""></div>
+                <div class="portfolio-menu__images"><img src="assets/img2.jpg" alt=""></div>
+                <div class="portfolio-menu__images"><img src="assets/img3.jpg" alt=""></div>
+                <div class="portfolio-menu__images"><img src="assets/img4.jpg" alt=""></div>
+                <div class="portfolio-menu__images"><img src="assets/img5.jpg" alt=""></div>
+                <div class="portfolio-menu__images"><img src="assets/img6.jpg" alt=""></div>
+                <div class="portfolio-menu__images"><img src="assets/img7.jpg" alt=""></div>
+                <div class="portfolio-menu__images"><img src="assets/img8.jpg" alt=""></div>
+                <div class="portfolio-menu__images"><img src="assets/img9.jpg" alt=""></div>
+                <div class="portfolio-menu__images"><img src="assets/img10.jpg" alt=""></div>
+                <div class="portfolio-menu__images"><img src="assets/img11.jpg" alt=""></div>
+                <div class="portfolio-menu__images"><img src="assets/img12.jpg" alt=""></div>
+            </div>           
+        </div>   
+    </section>
+    <section class="about" id="about-us">
+        <div class="container">
+            <div class="about__description-wrap">
+                <h2>About Us</h2>
+                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                </div>
+            <div class="about__profiles-wrap">
+                <div class="about__profiles"><img src="assets/profile1.jpg" alt="">
+                    <h3>Adam Jensen</h3>
+                    <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                    <div class="social-icons">
+                        <a class="social-icons__icon icon-facebook" href="#"></a>
+                        <a class="social-icons__icon icon-google" href="#"></a>
+                        <a class="social-icons__icon icon-twitter" href="#"></a>
+                        <a class="social-icons__icon icon-linkedin"href="#"></a>
                     </div>
-                </div>  
-            </form>
-        </div>
-        <div class="contact__info">
-            <h3>Contact Information</h3>
-            <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. </p>
-            <p class="address"><?xml version="1.0" encoding="UTF-8"?>
-                <svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <title>icon-location</title>
-                    <desc>Created with Sketch.</desc>
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <path d="M6.87329102,3.93501974 C6.87329102,7.21714474 3.43579102,11.4975197 3.43579102,11.4975197 C3.43579102,11.4975197 -0.00170898438,7.21714474 -0.00170898438,3.93501974 C-0.00170898438,2.03683224 1.53691602,0.497519741 3.43579102,0.497519741 C5.33397852,0.497519741 6.87329102,2.03683224 6.87329102,3.93501974 Z M5.29204102,3.97626974 C5.29204102,2.95120724 4.46085352,2.12001974 3.43579102,2.12001974 C2.41072852,2.12001974 1.57954102,2.95120724 1.57954102,3.97626974 C1.57954102,5.00133224 2.41072852,5.83251974 3.43579102,5.83251974 C4.46085352,5.83251974 5.29204102,5.00133224 5.29204102,3.97626974 Z" id="icon-location" fill="#F0D8D9"></path>
-                    </g>
-                </svg>Elm St. 14/05 Lost City</p>
-            <a class="phone" href="tel:035283318635"><?xml version="1.0" encoding="UTF-8"?>
-                <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <title>icon-phone</title>
-                    <desc>Created with Sketch.</desc>
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <path d="M6.88151353,6.84167976 C5.79323477,7.93064599 4.53239886,8.97080125 4.03466429,8.47306668 C3.32106142,7.7594638 2.88107506,7.13798307 1.3088113,8.40225637 C-0.264139932,9.66652968 0.943760119,10.5086911 1.6346762,11.2002946 C2.43215147,11.9977699 5.40549679,11.2422308 8.34378069,8.30394692 C11.2813771,5.36566302 12.0376037,2.39300518 11.2394409,1.59484242 C10.5485248,0.903926345 9.70567597,-0.303973706 8.44209015,1.26897753 C7.17781684,2.84124128 7.79929758,3.28122764 8.51290045,3.99483052 C9.01063502,4.49256509 7.97047977,5.753401 6.88151353,6.84167976 Z" id="icon-phone" fill="#F0D8D9" fill-rule="nonzero"></path>
-                    </g>
-                </svg>03528 331 86 35</a>
-            <a class="email" href="mailto:info@singolo.com">  
-                <?xml version="1.0" encoding="UTF-8"?>
-                <svg width="13px" height="10px" viewBox="0 0 13 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <title>icon-email</title>
-                    <desc>Created with Sketch.</desc>
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <path d="M12.7204977,3.03740906 C12.3196645,3.24613123 7.39988778,5.81868623 7.15433228,5.94651954 C6.90877678,6.07507506 6.73688793,6.09168617 6.50000025,6.09168617 C6.26238803,6.09168617 6.0912214,6.07507506 5.8456659,5.94651954 C5.6001104,5.81868623 0.680333689,3.24613123 0.279500442,3.03740906 C-0.00216616319,2.89007575 2.51459657e-07,3.06268683 2.51459657e-07,3.19557569 L2.51459657e-07,8.49379676 C2.51459657e-07,8.7964078 0.403000415,9.18640772 0.716444792,9.18640772 L12.2835534,9.18640772 C12.5969978,9.18640772 13.0000003,8.7964078 13.0000003,8.49379676 L13.0000003,3.19557569 C13.0000003,3.06268683 13.0028866,2.89007575 12.7204977,3.03740906 Z M0.42900041,1.59296493 C0.781444778,1.78218711 5.66366594,4.40457543 5.8456659,4.5020754 C6.02694364,4.60029761 6.26238803,4.64724204 6.49999909,4.64724204 C6.73688793,4.64724204 6.97233232,4.60029761 7.15433228,4.5020754 C7.33633224,4.40457543 12.2185534,1.78218711 12.5709978,1.59296493 C12.9234421,1.40302052 13.257831,0.808631763 12.6092755,0.808631763 L0.390000418,0.808631763 C-0.257110552,0.808631763 0.0758338199,1.40302052 0.42900041,1.59296493 Z" id="icon-email" fill="#F0D8D9" fill-rule="nonzero"></path>
-                    </g>
-                </svg>info@singolo.com</a>
-        </div>
+                </div>
+                <div class="about__profiles"><img src="assets/profile2.jpg" alt="">
+                    <h3>Desmond Miles</h3>
+                    <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                    <div class="social-icons">
+                        <a class="social-icons__icon icon-facebook" href="#"></a>
+                        <a class="social-icons__icon icon-google" href="#"></a>
+                        <a class="social-icons__icon icon-twitter" href="#"></a>
+                        <a class="social-icons__icon icon-linkedin"href="#"></a>
+                    </div>
+                </div>
+                <div class="about__profiles"><img src="assets/profile3.jpg" alt="">
+                    <h3>Scolara Visari</h3>
+                    <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                    <div class="social-icons">
+                        <a class="social-icons__icon icon icon-facebook" href="#"></a>
+                        <a class="social-icons__icon icon-google" href="#"></a>
+                        <a class="social-icons__icon icon-twitter" href="#"></a>
+                        <a class="social-icons__icon icon-linkedin"href="#"></a>
+                    </div>
+                </div>
 
-       </div>  
-        
-    </div>
-</div>   
-<div class="footer">
+            </div>
+        </div>
+    </section>
+    <!-- singolo3 --> 
+    <section class="contact" id="contact">
+        <div class="container">
+        <div class="contact__description-wrap">
+            <h2>Get a Quote</h2>
+            <p> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>               
+        </div> 
+        <div class="contact__form-wrap">
+            <div class="contact__form">
+                <form method="get" id="fotm">    
+                    <input name="Name" class="" type="text" id ="subject-name" placeholder="Name (Required)" required />
+                    <input name="Email" class="" type="email" id ="subject-email" placeholder="Email (Required)"required />
+                    <input name="Subject" class="" type="text" id ="subject-discription" placeholder="Subject" />  
+                    <textarea name="Detail" cols="28" rows="11" id ="subject-masenge" placeholder="Describe your project in detail..."></textarea> 
+                    <input type="submit" id ="subject-submit" value="submit" name="subscribe" class="submitbtn" />
+                    <div id="message-block" class="hidden">
+                        <div id="message" class="hidden">
+                            <p><span class="messages" id="result1"></span></p>
+                            <p><span class="messages" id="result2"></span></p>
+                            <p><span class="messages" id="result3"></span></p>
+                            <button class="message-block-btn" id="close-btn">OK</button>
+                        </div>
+                    </div>  
+                </form>
+            </div>
+            <div class="contact__info" id="get-quote">
+                <h3>Contact Information</h3>
+                <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. </p>
+                <p class="address"><?xml version="1.0" encoding="UTF-8"?>
+                    <svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>icon-location</title>
+                        <desc>Created with Sketch.</desc>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path d="M6.87329102,3.93501974 C6.87329102,7.21714474 3.43579102,11.4975197 3.43579102,11.4975197 C3.43579102,11.4975197 -0.00170898438,7.21714474 -0.00170898438,3.93501974 C-0.00170898438,2.03683224 1.53691602,0.497519741 3.43579102,0.497519741 C5.33397852,0.497519741 6.87329102,2.03683224 6.87329102,3.93501974 Z M5.29204102,3.97626974 C5.29204102,2.95120724 4.46085352,2.12001974 3.43579102,2.12001974 C2.41072852,2.12001974 1.57954102,2.95120724 1.57954102,3.97626974 C1.57954102,5.00133224 2.41072852,5.83251974 3.43579102,5.83251974 C4.46085352,5.83251974 5.29204102,5.00133224 5.29204102,3.97626974 Z" id="icon-location" fill="#F0D8D9"></path>
+                        </g>
+                    </svg>Elm St. 14/05 Lost City</p>
+                <a class="phone" href="tel:035283318635"><?xml version="1.0" encoding="UTF-8"?>
+                    <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>icon-phone</title>
+                        <desc>Created with Sketch.</desc>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path d="M6.88151353,6.84167976 C5.79323477,7.93064599 4.53239886,8.97080125 4.03466429,8.47306668 C3.32106142,7.7594638 2.88107506,7.13798307 1.3088113,8.40225637 C-0.264139932,9.66652968 0.943760119,10.5086911 1.6346762,11.2002946 C2.43215147,11.9977699 5.40549679,11.2422308 8.34378069,8.30394692 C11.2813771,5.36566302 12.0376037,2.39300518 11.2394409,1.59484242 C10.5485248,0.903926345 9.70567597,-0.303973706 8.44209015,1.26897753 C7.17781684,2.84124128 7.79929758,3.28122764 8.51290045,3.99483052 C9.01063502,4.49256509 7.97047977,5.753401 6.88151353,6.84167976 Z" id="icon-phone" fill="#F0D8D9" fill-rule="nonzero"></path>
+                        </g>
+                    </svg>03528 331 86 35</a>
+                <a class="email" href="mailto:info@singolo.com">  
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>icon-email</title>
+                        <desc>Created with Sketch.</desc>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path d="M12.7204977,3.03740906 C12.3196645,3.24613123 7.39988778,5.81868623 7.15433228,5.94651954 C6.90877678,6.07507506 6.73688793,6.09168617 6.50000025,6.09168617 C6.26238803,6.09168617 6.0912214,6.07507506 5.8456659,5.94651954 C5.6001104,5.81868623 0.680333689,3.24613123 0.279500442,3.03740906 C-0.00216616319,2.89007575 2.51459657e-07,3.06268683 2.51459657e-07,3.19557569 L2.51459657e-07,8.49379676 C2.51459657e-07,8.7964078 0.403000415,9.18640772 0.716444792,9.18640772 L12.2835534,9.18640772 C12.5969978,9.18640772 13.0000003,8.7964078 13.0000003,8.49379676 L13.0000003,3.19557569 C13.0000003,3.06268683 13.0028866,2.89007575 12.7204977,3.03740906 Z M0.42900041,1.59296493 C0.781444778,1.78218711 5.66366594,4.40457543 5.8456659,4.5020754 C6.02694364,4.60029761 6.26238803,4.64724204 6.49999909,4.64724204 C6.73688793,4.64724204 6.97233232,4.60029761 7.15433228,4.5020754 C7.33633224,4.40457543 12.2185534,1.78218711 12.5709978,1.59296493 C12.9234421,1.40302052 13.257831,0.808631763 12.6092755,0.808631763 L0.390000418,0.808631763 C-0.257110552,0.808631763 0.0758338199,1.40302052 0.42900041,1.59296493 Z" id="icon-email" fill="#F0D8D9" fill-rule="nonzero"></path>
+                        </g>
+                    </svg>info@singolo.com</a>
+            </div>
+        </div>            
+    </section> 
+</main>  
+<footer class="footer">
     <div class="container">
             <div class="copyright">&copy; Copyright 2013</div>
             <div class="social-icons">
@@ -223,9 +218,8 @@
                 <a class="social-icons__icon icon-twitter" href="#"></a>
                 <a class="social-icons__icon icon-linkedin"href="#"></a>
             </div>
-
     </div>        
-</div>
+</footer>
 <script src="script.js">
 </script>  
 </body>

@@ -1,21 +1,47 @@
-const MENU = document.getElementById('menu');
+// Menu navigation
+document.addEventListener('scroll', onScroll);
+
+function onScroll (event) {
+   const curPos = window.scrollY;
+   const divs = document.querySelectorAll('#main>section');
+   const links = document.querySelectorAll('#menu a')
+
+   divs.forEach((el) => {
+        if (el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos) {
+            links.forEach((a) => {
+                a.classList.remove('active');
+                if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+                    a.classList.add('active');
+                }
+            })
+        }
+    });
+}
+
+document.querySelector('.header-nav__list').addEventListener('click', (e) => {
+    if (e.target.classList.contains('header-nav__title')){
+        let clickedLink = e.target;
+        removeSelectedLinks();
+        selectClickedLink(clickedLink)
+    }
+})
+
+
+const removeSelectedLinks = () => {
+    let links = document.querySelectorAll('.header-nav__title');
+    links.forEach(link => {
+        link.classList.remove('active');
+    })
+}
+
+const selectClickedLink = (clickedLink) =>{
+    clickedLink.classList.add('active');
+}
+
+
+// Modal for Get a quote form
 const BUTTON = document.getElementById("subject-submit");
 const CLOSE_BUTTON = document.getElementById("close-btn");
-
-
-MENU.addEventListener('click', (event) =>{
-    MENU.querySelectorAll('a').forEach(el => el.classList.remove('active'));
-    event.target.classList.add('active');
-    function toAnchor(anchor) {
-        window.location = "#" + anchor;
-    }
-    window.onclick = function () { toAnchor("home"); };
-    window.onclick = function () { toAnchor("Our-services"); };
-    window.onclick = function () { toAnchor("portfolio"); };
-    window.onclick = function () { toAnchor("about-us"); };
-    window.onclick = function () { toAnchor("contact"); };
-});
-
 BUTTON.addEventListener('click', (e) => {
     if (document.getElementById('subject-name').value !== '' && document.getElementById('subject-email').value !== '') {
         e.preventDefault();
@@ -46,6 +72,7 @@ CLOSE_BUTTON.addEventListener('click', () => {
     document.getElementById('message').classList.add('hidden');
 });
 
+// Slider
 let items = document.querySelectorAll('.slider__phone');
 let currentItem = 0; 
 let isEnabled = true;
@@ -71,16 +98,24 @@ function showItem(direction) {
     });
 }
 
+function changeBackgraundSlider() {
+    if (currentItem == 0) {document.querySelector('.slider').classList.add('blue')}
+    if (currentItem !== 0) {document.querySelector('.slider').classList.remove('blue')}
+}
+
 function nextItem(n) {
+    changeBackgraundSlider()
     hideItem('to-left')
     changeCurrentItem(n + 1)
     showItem('from-right');
 }
 
 function previousItem(n) {
+    changeBackgraundSlider()
     hideItem('to-right')
     changeCurrentItem(n - 1)
     showItem('from-left');
+    
 }
 
 document.querySelector('.slider__button--left').addEventListener('click', function(){
@@ -98,3 +133,38 @@ document.querySelector('.slider__button--right').addEventListener('click', funct
 document.querySelector('.phone--horizontal').addEventListener('click', function(){
     document.querySelector('.display--horizontal').classList.remove('display--horizontal');
 });
+
+//Portfolio images border
+const PORTFOLIO_IMAGES = document.getElementById('portfolio__images');
+PORTFOLIO_IMAGES.addEventListener('click', event => {
+    let target = event.target;
+    if (target.tagName == 'IMG') {
+        PORTFOLIO_IMAGES.querySelectorAll('img').forEach(item => {
+            item.style.boxShadow = "none";
+        });
+        event.target.style.boxShadow = "0px 0px 0px 5px #f06c64";
+    }
+
+})
+
+//Portfolio tabs
+
+document.querySelector('.portfolio-menu__list').addEventListener('click', (e) => {
+    if (e.target.classList.contains('portfolio-menu__title')){
+        let clickedTag = e.target;
+        removeSelectedTags();
+        selectClickedTag(clickedTag)
+    }
+})
+
+
+const removeSelectedTags = () => {
+    let tags = document.querySelectorAll('.portfolio-menu__title');
+    tags.forEach(tag => {
+        tag.classList.remove('selected');
+    })
+}
+
+const selectClickedTag = (clickedTag) =>{
+    clickedTag.classList.add('selected');
+}
