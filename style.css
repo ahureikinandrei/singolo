@@ -218,7 +218,14 @@ body {
 .phone--vertical--shadow {
     position: absolute;
     left: 73px;
-    bottom: -238px;;
+    bottom: -238px;
+}
+
+.phone--vertical--button {
+    position: absolute;
+    left: 156px;
+    bottom: -207px;
+    z-index: 3;
 }
 
 .display--horizontal {
@@ -245,6 +252,13 @@ body {
     left: 506px;
     top: -244px;
     transform: rotate(90deg) scale(1,-1);;
+}
+
+.phone--horizontal--button {
+    position: absolute;
+    left: 390px;
+    bottom: -6px;
+    z-index: 3;
 }
 
 .phone--slide {
