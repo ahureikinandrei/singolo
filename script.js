@@ -7,19 +7,18 @@ function onScroll (event) {
    const links = document.querySelectorAll('#menu a')
    const header_height = document.querySelector('.header').offsetHeight
 
-   divs.forEach((el) => {
-        
-        if ((el.offsetTop - header_height) <= curPos && (el.offsetTop + el.offsetHeight) > curPos) {
-            links.forEach((a) => {
-                a.classList.remove('active');
-                if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
-                    a.classList.add('active');
-                }
-            })
-        }
-      
+   divs.forEach((el) => {  
+            if ((el.offsetTop - header_height) <= curPos && (el.offsetTop + el.offsetHeight) > curPos) {
+                links.forEach((a) => {
+                    a.classList.remove('active');
+                    if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+                        a.classList.add('active');
+                    }
+                })
+            }      
         });
 }
+
 //  Change links style on bottom position document
 window.onscroll = function(ev) {  
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
@@ -139,6 +138,7 @@ document.querySelector('.slider__button--right').addEventListener('click', funct
         nextItem(currentItem);
     }
 });
+
 // Slider Display activity
 
 const PHONE_DISPLAY_VERTICAL = document.querySelector('.display--vertical');
@@ -202,3 +202,32 @@ const randomImageposition = () => {
         return Math.random() - 0.5;});
     portfolioPictures.forEach( pic => portfolio.append(pic) );
 }
+
+// Humburger
+
+const HUMBURGER = document.querySelector('.humburger');
+const HEADERNAV = document.querySelector('.header-nav');
+const HEADERNAVHERF = document.querySelector('.header-nav');
+
+let status_humburger = 0;
+
+HUMBURGER.addEventListener('click', () => {
+    if (status_humburger == 0) {     
+        HUMBURGER.classList.add('humburger-transform');
+        HEADERNAV.classList.add('mabile__menu-active');
+        status_humburger = 1;
+    }
+    else if (status_humburger == 1) {     
+        removehumburger()
+    }
+})
+
+function removehumburger() {
+    HUMBURGER.classList.remove('humburger-transform');
+    HEADERNAV.classList.remove('mabile__menu-active');
+    status_humburger = 0;
+}
+
+HEADERNAVHERF.addEventListener('click', () => {
+    removehumburger()
+})
