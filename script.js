@@ -52,7 +52,7 @@ const selectClickedLink = (clickedLink) =>{
 const BUTTON = document.getElementById("subject-submit");
 const CLOSE_BUTTON = document.getElementById("close-btn");
 BUTTON.addEventListener('click', (e) => {
-    if (document.getElementById('subject-name').value !== '' && document.getElementById('subject-email').value !== '') {
+    if (document.getElementById('subject-name').checkValidity() && document.getElementById('subject-email').checkValidity()) {
         e.preventDefault();
         const subject = document.getElementById('subject-discription').value.toString();
         const project = document.getElementById('subject-masenge').value.toString();
